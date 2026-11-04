@@ -69,18 +69,64 @@
 
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>A home security system that combines a <strong>keypad-controlled door lock</strong>, motion detection, <strong>visual status indicators, and an audible alarm to simulate a smart home security system.</p>
-    <p>This project uses an <strong>Arduino Uno</strong>, an <strong>HC-SR04 ultrasonic sensor</strong>, a
+    <p> The objective of this project is to design, develop, and program an
+     Arduino-based home security system using the <strong>Arduino Uno</strong> microcontroller.
+     The system integrates multiple hardware components, including a <strong>keypad</strong>,
+     <strong>Grove servo motor (EMAX 9g ES08A Mini Servo)</strong>, <strong>PIR (Passive Infrared) motion sensor</strong>,
+     <strong>LCD</strong>, <strong>RGB LED</strong>, and <strong>piezo buzzer</strong>, to implement password-protected
+      access control, motion detection, and security alarm functionality.
+    </p>
+
+    <p>
+        The system allows authorized users to unlock the security mechanism
+        using a predefined password while monitoring the surrounding area
+        for unauthorized movement. When suspicious motion is detected,
+        the system provides visual and audible alerts through the RGB LED
+        and piezo buzzer.
+    </p>
+
+    <p>
+        This project demonstrates the practical integration of
+        <strong>sensors, actuators, input devices, and user-interface
+        components</strong> within a single embedded system, highlighting
+        the application of microcontroller technology in home automation
+        and security solutions.
+      </p>
+
+     <!-- <p>The Objective of the project is to design and program a home security system using <strong> Arduino Uno</strong>. The system integrates multiple hardware components—including a <strong>keypad</strong>, <strong>Grove servo motor(EMAX 9g ES08A mini servo)</strong>,  <strong>PIR motion sensor(Passive Infrared Sensor) </strong>, <strong>LCD, RGB LED</strong>, and <strong>piezo buzzer—to provide password-controlled  access</strong>, motion detection, and alarm functionality. The project demonstrates the integration of <strong>sensors, actuators,</strong>and user interfaces with a single embedded system. </p> -->
+    
+     <!-- <p>This project uses an <strong>Arduino Uno</strong>, an <strong>HC-SR04 ultrasonic sensor</strong>, a
       <strong>passive buzzer</strong>, and <strong>red/yellow/green LEDs</strong> to provide proximity-based
       alerts, similar to automotive collision detection systems.
-    </p>
+    </p> -->
   </section>
 
   <section id="circuit-diagram">
     <h2>Circuit Diagram</h2>
-    <p>The ultrasonic sensor measures distance; the Arduino activates LEDs and the buzzer according to distance
-      thresholds.</p>
-    <img src="collision-warning-system-Arduino.jpg" alt="Arduino collision warning system">
+    <p>
+    <strong>Arduino Uno-based home security system</strong>
+    integrated with a 4×4 keypad, PIR motion sensor, servo motor, buzzer, and LED display.
+    <br>
+    The system detects motion, allows <strong>keypad-based security control</strong>,
+    and displays security status and alerts on the LED screen.
+  </p>
+    <img src="SmartHomeSecuritySystem-phase-1.jpg" alt="SmartHomeSecuritySystem"
+    width="500" 
+     height="500" 
+     loading="lazy" 
+     style="width: 100%; height: auto; max-width: 500px;">
+   <p>
+    Phase 2 with LCD Display
+    <img src="SmartHomeSecuritySystem-phase-2.jpg" alt="SmartHomeSecuritySystem"
+    width="500" 
+     height="500" 
+     loading="lazy" 
+     style="width: 100%; height: auto; max-width: 500px;">
+   <p>
+
+   </p>
+
+
   </section>
 
   <section id="environment">
@@ -278,8 +324,7 @@ void loop() {
 
   <section id="conclusion">
     <h2>Conclusion</h2>
-    <p>The system effectively demonstrates distance-based alerting using Arduino. It’s affordable, educational, and
-      sustainable through reusable components.</p>
+    <p>The system Arduino Uno with a keypad, PIR motion sensor, servo motor, LEDs, and a buzzer to build an interactive, password-protected security system. By combining user authentication with real-time motion detection and audio-visual indicators, the project demonstrates an effective and scalable microcontroller-based access control solution</p>
   </section>
 
  <section id="references">
@@ -288,41 +333,43 @@ void loop() {
   <ul>
     <li>
       Arduino Project Hub. (n.d.). 
-      <em>Ultrasonic sensor projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
-      </a>
+      <em>Smart home security system.</em> 
+      <a href="https://projecthub.arduino.cc/esperamos/arduino-based-smart-security-system-3c42d3"
+      target="_blank"
+      rel="noopener noreferrer">
+      https://projecthub.arduino.cc/esperamos/arduino-based-smart-security-system-3c42d3
+    </a>
     </li>
 
     <li>
       Arduino Project Hub. (n.d.). 
-      <em>Buzzer projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://create.arduino.cc/projecthub/projects/tags/buzzer" target="_blank" rel="noopener noreferrer">
-        https://create.arduino.cc/projecthub/projects/tags/buzzer
+      <em>Grove Servo.</em>
+      <a href="https://store.arduino.cc/products/grove-servo?queryID=undefined"
+      target="_blank"
+      rel="noopener noreferrer">
+      https://store.arduino.cc/products/grove-servo?queryID=undefined
       </a>
-    </li>
+      </li>
 
     <li>
       Arduino Project Hub. (n.d.). 
       <em>LED projects.</em> 
       Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/led
-      </a>
+      <a href="https://store-usa.arduino.cc/products/set-of-70-assorted-color-5mm-leds" target="_blank" rel="noopener noreferrer">
+        https://store-usa.arduino.cc/products/set-of-70-assorted-color-5mm-leds
+     </a>
+      
     </li>
 
     <li>
       Instructables. (n.d.). 
-      <em>Distance measurement using ultrasonic sensor.</em> 
-      Instructables. 
-      <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank" rel="noopener noreferrer">
-        https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
+      <em>Grove PIR Motion Sensor.</em> 
+      <a href="https://store.arduino.cc/products/grove-pir-motion-sensor" target="_blank" rel="noopener noreferrer">
+        https://store.arduino.cc/products/grove-pir-motion-sensor
       </a>
-    </li>
+      </li>
 
-    <li>
+    <!-- <li>
       Circuit Basics. (n.d.). 
       <em>How to use an ultrasonic sensor with Arduino.</em> 
       Circuit Basics. 
@@ -337,7 +384,7 @@ void loop() {
       Last Minute Engineers. 
       <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank" rel="noopener noreferrer">
         https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
-      </a>
+      </a> -->
     </li>
   </ul>
 </section>
