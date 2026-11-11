@@ -84,6 +84,215 @@
     <p>
     Overall, the project highlights the role of automation, electronics, and programming in solving real-world security challenges while promoting safer communities and accessible technological innovation.
     </p>
+     <!-- <h1>Arduino Uno Home Security System Analysis</h1> -->
+
+    <div class="card">
+        <!-- <h2>1. What Your Project Needs to Do</h2> -->
+   <p>
+        This project is an automated, low-cost residential security gatekeeper that uses an 
+        <strong>Arduino Uno</strong> to process inputs from a <strong>keypad</strong> and a 
+        <strong>PIR motion sensor</strong> to control a <strong>servo motor</strong>, an 
+        <strong>LCD display</strong>, an <strong>RGB LED</strong>, and a <strong>piezo buzzer</strong>.   
+        The system secures a property by authenticating users via a <strong>keypad password</strong>, 
+        monitoring the environment for <strong>unauthorized human presence</strong>, and detecting 
+        threats using <strong>audiovisual alarms</strong>.
+      </p>
+        <p>
+        Real-time feedback—such as <strong>"System Armed"</strong>, <strong>"Access Granted"</strong>, 
+        and <strong>"Motion Detected"</strong>—is continuously updated on the <strong>LCD screen</strong> 
+        to keep residents informed of the system's status.
+     </p>
+     <p>
+       
+    </p>
+
+
+        <!-- <p>
+            The project serves as an <strong>automated, low-cost, and reliable residential security gatekeeper</strong>.
+            It integrates hardware inputs such as a keypad and PIR motion sensor with Arduino Uno decision-making logic,
+            controlling physical actuators like a servo motor and output devices including an LCD display,
+            RGB LED, and piezo buzzer.
+        </p> -->
+
+<!-- 
+        <p>Specifically, the system must:</p>
+
+        <ul>
+            <li>
+                <strong>Authenticate Users:</strong>
+                Grant or deny access based on a secure keypad password.
+            </li>
+
+            <li>
+                <strong>Monitor the Environment:</strong>
+                Continuously detect unauthorized human presence using a PIR motion sensor.
+            </li>
+
+            <li>
+                <strong>Deter and Alert:</strong>
+                Trigger audiovisual alarms through the RGB LED and piezo buzzer when an intrusion is detected.
+            </li>
+
+            <li>
+                <strong>Provide System Feedback:</strong>
+                Display real-time system status messages on the LCD screen, such as:
+                "System Armed", "Access Granted", and "Motion Detected".
+            </li>
+        </ul> -->
+    </div>
+
+    <div class="card">
+        <!-- <h2>2. Main Capabilities and Their Importance</h2> -->
+        <p>
+        The system's main capabilities include four key functions: <strong>Password-Protected Access Control</strong>, which uses a keypad and a Grove Servo Motor to prevent unauthorized physical entry by requiring a valid passcode before unlocking the door mechanism. <strong>Intrusion & Motion Detection</strong> utilizes a PIR Motion Sensor to detect movement and thermal changes in the environment to identify potential intruders. <strong>Immediate Threat Alerting</strong> uses an RGB LED and piezo buzzer to provide visual and audible warnings that deter intruders and notify nearby occupants. 
+        </p>
+        <p>
+        Finally, <strong>User Interface & Status Feedback</strong> uses an LCD screen to display system information and operating status in real time, helping users understand system conditions.
+       </p>
+        
+<!-- 
+        <table>
+            <thead>
+                <tr>
+                    <th>Capability</th>
+                    <th>Component(s) Involved</th>
+                    <th>Why It Is Necessary</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><strong>Password-Protected Access Control</strong></td>
+                    <td>Keypad &amp; Grove Servo Motor</td>
+                    <td>
+                        Prevents unauthorized physical entry by requiring a valid passcode
+                        before unlocking the door mechanism.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Intrusion &amp; Motion Detection</strong></td>
+                    <td>PIR Motion Sensor</td>
+                    <td>
+                        Detects movement and thermal changes in the environment to identify
+                        potential intruders.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Immediate Threat Alerting</strong></td>
+                    <td>RGB LED &amp; Piezo Buzzer</td>
+                    <td>
+                        Produces visual and audible warnings to deter intruders and notify
+                        nearby occupants.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>User Interface &amp; Status Feedback</strong></td>
+                    <td>LCD Screen</td>
+                    <td>
+                        Displays system information and operating status in real time,
+                        helping users understand system conditions.
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+<div class="card">
+        <!-- <h2>3. Goals and Success Evaluation Metrics</h2> -->
+        <p>The project will be evaluated on its functional reliability, accuracy, and robustness across three core goals: ensuring reliable <strong>access control authentication</strong> by correctly verifying passcodes to trigger the <strong>servo motor</strong> and <strong>LCD status</strong>; maintaining responsive <strong>motion detection</strong> and <strong>intrusion alerting</strong> through the <strong>PIR sensor</strong>, <strong>RGB LED</strong>, and <strong>piezo buzzer</strong> to minimize false positives; and achieving <strong>system stability</strong> and <strong>low-cost integration</strong> by 
+        running continuously on an <strong>Arduino Uno</strong> without unexpected crashes.</p>
+          <!-- running continuously on an <strong>Arduino Uno</strong> without power conflicts or unexpected crashes.</p> -->
+
+        <!-- <div class="goal">
+            <h3>Goal 1: Reliable Access Control Authentication</h3>
+
+            <p class="objective">
+                Objective:
+            </p>
+
+            <p>
+                The system must accurately distinguish between correct and incorrect passcodes.
+            </p>
+
+            <div class="success">
+                <strong>Success Criteria:</strong>
+                <ul>
+                    <li>
+                        A correct passcode unlocks the servo motor within 1–2 seconds and
+                        displays <em>"Access Granted"</em> on the LCD.
+                    </li>
+                    <li>
+                        An incorrect passcode keeps the servo locked, displays
+                        <em>"Access Denied"</em>, and may increase an attempt counter or
+                        initiate a temporary lockout.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="goal">
+            <h3>Goal 2: Responsive Motion Detection and Intrusion Alerting</h3>
+
+            <p class="objective">
+                Objective:
+            </p>
+
+            <p>
+                The PIR sensor must detect human movement accurately and immediately trigger
+                the alarm system.
+            </p>
+
+            <div class="success">
+                <strong>Success Criteria:</strong>
+                <ul>
+                    <li>
+                        When motion is detected while the system is armed, the RGB LED begins
+                        flashing red and the piezo buzzer activates instantly.
+                    </li>
+                    <li>
+                        False alarms are minimized through proper PIR sensor calibration
+                        during startup.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="goal">
+            <h3>Goal 3: System Stability and Low-Cost Integration</h3>
+
+            <p class="objective">
+                Objective:
+            </p>
+
+            <p>
+                All hardware modules must operate together reliably on the Arduino Uno
+                without freezing, lagging, or power-related issues.
+            </p>
+
+            <div class="success">
+                <strong>Success Criteria:</strong>
+                <ul>
+                    <li>
+                        The system operates continuously without unexpected resets or crashes.
+                    </li>
+                    <li>
+                        Current consumption remains within safe limits for a standard
+                        Arduino 5V USB power supply.
+                    </li>
+                    <li>
+                        The design remains cost-effective and practical for real-world use,
+                        supporting Sustainable Development Goals (SDGs) 9, 11, and 16.
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+    </div>
+
+ 
+
     <!-- <p> 
      The objective of this project is to design, develop, and program an Arduino-based home security system using the <strong>Arduino Uno</strong> microcontroller. The project addresses the growing importance of home security and the need for affordable, accessible, and reliable solutions to help protect residential properties from unauthorized access and potential security threats.
     </p>
